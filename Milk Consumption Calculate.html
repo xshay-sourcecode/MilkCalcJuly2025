@@ -69,7 +69,7 @@
   <div class="result" id="output"></div>
 
   <script>
-    const pricePerLiter = 78;
+    const pricePerLiter = 69;
     const daysInMonth = 30;
     const calendarBody = document.querySelector('#calendar tbody');
     const monthHeading = document.getElementById('monthHeading');
@@ -117,7 +117,7 @@
         row.appendChild(inputCell);
         calendarBody.appendChild(row);
       }
-      monthHeading.textContent = `Milk Consumption Calendar - ${getMonthName(currentMonth)} ${currentYear} (₹78/Liter)`;
+      monthHeading.textContent = `Milk Consumption Calendar - ${getMonthName(currentMonth)} ${currentYear} (₹69/Liter)`;
     }
 
     function calculateMonthlyTotal() {
@@ -132,7 +132,7 @@
       });
 
       const totalCost = totalLiters * pricePerLiter;
-      document.getElementById('output').innerHTML = 
+      document.getElementById('output').innerHTML =
         `Total Milk: <strong>${totalLiters.toFixed(2)} liters</strong><br>` +
         `Total Cost: <strong>₹${totalCost.toFixed(2)}</strong>`;
 
